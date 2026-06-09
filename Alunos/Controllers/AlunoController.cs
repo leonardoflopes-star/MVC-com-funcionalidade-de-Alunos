@@ -2,7 +2,6 @@ using Microsoft.AspNetCore.Mvc;
 
 public class AlunoController : Controller
 {
-    // Action: responde a /Produto/Index
     public IActionResult Index()
     {
         ViewBag.Nome = "Leonardo Miranda Ferreira Lopes";
@@ -13,10 +12,10 @@ public class AlunoController : Controller
         return View();
     }
 
-    // Action: responde a /Produto/Detalhes/5
+    
     public IActionResult Detalhes(int id)
     {
-        ViewBag.ProdutoId = id;
+        ViewBag.AlunoId = id;
         return View();
     }
 }
